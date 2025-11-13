@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в чат</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+<h1 class="text-3xl font-bold mb-6">Добро пожаловать в чат</h1>
+
+<form action="/join_chat" method="post" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+    <label class="block text-gray-700">Введите ваше имя:</label>
+    <input type="text" name="username" required
+           class="w-full p-2 border border-gray-300 rounded-lg mt-2 focus:ring-2 focus:ring-blue-500">
+
+    <label class="block text-gray-700 mt-4">Введите ID комнаты:</label>
+    <input type="number" name="room_id" required min="1"
+           class="w-full p-2 border border-gray-300 rounded-lg mt-2 focus:ring-2 focus:ring-blue-500">
+    <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 hover:bg-blue-600">Войти в
+        чат
+    </button>
+</form>
+</body>
+</html>

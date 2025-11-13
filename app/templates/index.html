@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шахматы - Комната {{ room_id }}</title>
+    <link rel="stylesheet"
+          href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-4">
+<h1 class="text-2xl font-bold mb-4">Шахматы - Комната {{ room_id }}</h1>
+<h2 id="status" class="text-xl mb-2">Загрузка...</h2>
+
+<div id="room-data"
+     data-room-id="{{ room_id }}"
+     data-username="{{ username }}"
+     data-user-id="{{ user_id }}"
+     class="hidden">
+</div>
+
+<div id="myBoard" style="width: 400px"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+<script src="/static/index.js"></script>
+</body>
+</html>
